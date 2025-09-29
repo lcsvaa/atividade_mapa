@@ -31,7 +31,8 @@ Não requer **API Key** e é totalmente gratuito.
 1. Clone o repositório:
 
 ```bash
-git clone [https://github.com/seu-usuario/flutter-map-5-lugares.git](https://github.com/lcsvaa/atividade_mapa.git)
+git clone [https://github.com/lcsvaa/atividade_mapa.git]
+
 
 
 
