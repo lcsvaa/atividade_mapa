@@ -14,7 +14,6 @@ Não requer **API Key** e é totalmente gratuito.
 - Exibe um mapa interativo.
 - Mostra **5 marcadores fixos** em São Paulo.
 - Cada marcador representa um ponto de interesse.
-- Fácil de adicionar ou remover lugares.
 
 ---
 
@@ -34,4 +33,5 @@ Não requer **API Key** e é totalmente gratuito.
 ```bash
 git clone https://github.com/seu-usuario/flutter-map-5-lugares.git
 cd flutter-map-5-lugares
+
 
