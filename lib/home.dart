@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<LatLng> pontosSP = [
+      List<LatLng> pontosSP = [
       LatLng(-23.5300, -46.7053), // SENAC Tito
       LatLng(-23.54315105, -46.76319147758228), // Duckbill OSASCO
       LatLng(-23.58608545, -46.66190963338509), // Pavilhão Japonês
