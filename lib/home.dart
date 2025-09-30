@@ -7,12 +7,57 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-      List<LatLng> pontosSP = [
-      LatLng(-23.5300, -46.7053), // SENAC Tito
-      LatLng(-23.54315105, -46.76319147758228), // Duckbill OSASCO
-      LatLng(-23.58608545, -46.66190963338509), // Pavilhão Japonês
-      LatLng(-23.70182445, -46.69691577416339), // Autódromo de Interlagos
-      LatLng(-23.5422994, -46.4712065), // VAI CORINTHIANS
+    final List<Marker> markersSP = [
+      Marker(
+        width: 40,
+        height: 40,
+        point: LatLng(-23.5300, -46.7053), // SENAC Tito
+        child: Icon(
+          Icons.location_on,
+          color: Colors.blue,
+          size: 40,
+        ),
+      ),
+      Marker(
+        width: 40,
+        height: 40,
+        point: LatLng(-23.54315105, -46.76319147758228), // Duckbill OSASCO
+        child: Icon(
+          Icons.location_on,
+          color: Colors.green, 
+          size: 40,
+        ),
+      ),
+      Marker(
+        width: 40,
+        height: 40,
+        point: LatLng(-23.58608545, -46.66190963338509), // Pavilhão Japonês
+        child: Icon(
+          Icons.location_on,
+          color: Colors.orange,
+          size: 40,
+        ),
+      ),
+      Marker(
+        width: 40,
+        height: 40,
+        point: LatLng(-23.70182445, -46.69691577416339), // Autódromo de Interlagos
+        child: Icon(
+          Icons.location_on,
+          color: Colors.purple,
+          size: 40,
+        ),
+      ),
+      Marker(
+        width: 40,
+        height: 40,
+        point: LatLng(-23.5422994, -46.4712065), // VAI CORINTHIANS
+        child: Icon(
+          Icons.location_on,
+          color: Colors.black,
+          size: 40,
+        ),
+      ),
     ];
 
     return Scaffold(
@@ -28,20 +73,8 @@ class HomePage extends StatelessWidget {
             subdomains: ['a', 'b', 'c'],
             userAgentPackageName: 'com.example.atividade_mapa',
           ),
-          MarkerLayer(
-            markers: pontosSP.map((latLng) {
-              return Marker(
-                width: 40,
-                height: 40,
-                point: latLng,
-                child: const Icon(
-                  Icons.location_on,
-                  color: Colors.red,
-                  size: 40,
-                ),
-              );
-            }).toList(),
-          ),
+          // 2. Passe a lista de markers diretamente para o MarkerLayer
+          MarkerLayer(markers: markersSP),
         ],
       ),
     );
